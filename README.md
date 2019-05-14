@@ -3,7 +3,7 @@ Modded version of tarfile.py for testing arbitrary file (over)write via path tra
 
 This script is useful for quickly craft a tar archive with a file with dot-dot pattern as a filename and verify if the target library is vulnerable to arbitrary file overwrite via path traversal filenames.
 
-This tool can be considered the counterpart of https://github.com/ptoomey3/evilarc.
+This tool is almost the same of https://github.com/ptoomey3/evilarc. It depends upon zipfile and tarfile Python libraries.
 
 Example:
 
@@ -16,11 +16,8 @@ Example:
 Output:
 
 <pre>creating archive zip
-
 creating archive tar
-
 creating archive tar.gz
-
 creating archive tar.bz2
 
 Contents of evil.zip:
@@ -30,11 +27,9 @@ Contents of evil.tar:
 ['../../../../../../tmp/evil', 'safedir/safefile']
 
 Contents of evil.tar.gz:
-
 ['../../../../../../tmp/evil', 'safedir/safefile']
 
 Contents of evil.tar.bz2:
-
 ['../../../../../../tmp/evil', 'safedir/safefile']</pre>
 
 
