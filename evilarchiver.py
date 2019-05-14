@@ -5,8 +5,8 @@ import os
 from argparse import ArgumentParser
 
 def main():
-    print 'Eviltar | https://github.com/giuliocomi'
-    print 'Full Credits: https://github.com/python/cpython/blob/2.7/Lib/tarfile.py'
+    print 'Evilarchiver | https://github.com/giuliocomi'
+    print 'Full Credits: https://github.com/python/cpython/blob/2.7/Lib/tarfile.py and https://github.com/ptoomey3/evilarc'
     print 'The only goal of this script is to test arbitrary file (over)write via path traversal in Tar archives.'
 
     parser = ArgumentParser()
